@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Warade Portfolio</title>
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6c760b8efb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div  id="header" >
+        <div class ="container" >
+            <nav>
+                <!-- <img src="images/logo.png " class = "logo"> -->
+                <ul id="sidemenu">
+                    <li><a href ="#header" class="btn">Home</a></li>
+                    <li><a href ="#about" class="btn">About</a></li>
+                    <li><a href ="#services " class="btn">Experiences</a></li>
+                    <!-- <li><a href ="#portfolio" class="btn">Publications</a></li> -->
+                    <li><a href ="#contact" class="btn">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                 
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>   
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I am <span>Sahil Warade</span><br> from India</h1>
+            </div>
+        </div>
+  </div>
+  <!-- about------------------------------------ -->
+<div id="about">
+    <div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="images/user.jpg" >
+
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p style="text-align: justify;">I am Sahil Warade , From SCTRs Pune Institiute of computer Technology.
+                Curretly Student in Third Year Information Technology Department.
+                Seeking an internship opportunity that aligns with my skills, interests and aspirations, with the
+                intention of transitioning this experience into a full- time role within the organization.
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                <!-- <p class="tab-links" onclick="opentab('experiences')">Experiences</p> -->
+                <p class="tab-links"onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li> <span>Programming
+                        Languages </span><br>Python,
+                        C++, Java</li>
+                    <li> <span>Web Development</span><br> HTML,CSS,
+                        Javascrpit</li>
+                    <li> <span>Artifical Intelligence</span><br></li>
+                    <li> <span>Machine learning</span><br>TensorFlow , Object Detection</li>
+                </ul>
+            </div>
+            <!-- ----------------------- -->
+            <div class="tab-contents" id="projects">
+                <ul>
+                    <li> <span> Advancements in Malware Detection1</span><br>Developed machine learning models to classify executables as malicious
+                        or benign using KNN,XGBoost,voting classifiers, and randomforests.
+                        Achieved high accuracy and reduced false positives through rigorous
+                        model validation.</li>
+                    <li> <span>YOUTUBE COMMENTS SENTIMENT ANALYSIS</span><br>It is website made using Python and Flask (TeamProject). Website gives
+                        graph of sentiments in comments for that video.</li>
+                    <li> <span> Wanderlust</span><br> (TeamProject) .Developed a full-stack hotel booking platform using the
+                        MERN stack (MongoDB, Express.js, React.js, Node.js) to enhance user
+                        experience in travel accommodations.
+                        Implemented secure user authentication with encrypted passwords and
+                        JSON WebTokens(JWT)for session management.</li>
+                    <li> <span>Portfolio Website</span><br>This is a personal portfolio website built using HTML, CSS, and JavaScript to showcase my skills, projects, experience, and education. The website features a professional and minimalistic design with smooth animations, well-structured content, and a defined color theme for a visually appealing user experience.</li>
+                    <li> <span> STUDY SWAP(EcommerceWebsite)</span><br> It is website made using HTML,CSS and javascript.(TeamProject).
+                        Website that can be used to list your old educational materials which may
+                        not be used In future and selling the material students in need at lower
+                        price as compared to original.</li>
+                    <li> <span>TASK MANAGEMENT</span><br>It is website made using HTML,CSS and javascript.(TeamProject)
+                        .Website which manages our task and remind us abou tour tasks with
+                        to-do- list .</li>
+                    <li> <span> Rent Price Prediction Pune</span><br> (TeamProject) .Developed a linear regression model to predict rental
+                        prices in Pune based on area and address, providing instant estimates
+                        through a user-friendly interface. Analyzed model performance and
+                        visualized rental trends to enhance insights into pricing patterns.</li> 
+                    <li> <span> Piano Kit</span><br> Created an interactive Piano Kit website using HTML, CSS, and JavaScript,
+                        enabling users to play piano sounds bypressing keyboard keys. Designed
+                        a responsive interface with visual feedback for an engaging user
+                        experience. https://sahilwarade.github.io/Piano-Kit/</li>          
+                </ul>
+            </div>
+            <!-- ------------- -->
+            <!-- <div class="tab-contents" id="experiences">
+                <ul>
+                    <li> <span>AL-ML Virtual Internship </span><br>I gained hands-on experience in mobile AI development, focusing on product image search, object detection, and image classification. I learned to integrate on-device Object Detection for product search, optimize TensorFlow Lite models, and train custom object-detection models using Model Maker. This experience enhanced my understanding of neural networks, deep learning, and mobile AI optimization, allowing me to build efficient, real-world AI solutions for mobile applications.</li>
+                     <li> <span>Internship2</span><br>Web Developmentxgjsfjfjyrsjsyjysjsyj</li> 
+                     <li> <span>Internship3</span><br>Building Android / IOS appsjsrtjysrjyrjsyjsyjdytytj</li>
+                </ul>
+            </div> -->
+            <!-- ---------- -->
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li> <span>Montfort School Nagpur</span><br> Class 10(SSC) 90.4%</li>
+                    <li> <span>St Paul School Nagpur</span><br>Class 12(HSC) 94%</li>
+                    <li> <span>SCTR'S Pune Institute of Computer Technology,Pune Third Year 
+                         </span><br>IT Third Year  SGPA 7.85</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+<!-- ********************************************************************** -->
+<!-- services------------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Experiences</h1>
+        <div class="services-list">
+            <div>
+
+                <i class="fa-solid fa-code"></i>
+            <h2>AL-ML Virtual Internship</h2>
+            <p>I gained hands-on experience in mobile AI development, focusing on product image search, object detection, and image classification. I learned to integrate on-device Object Detection for product search, optimize TensorFlow Lite models, and train custom object-detection models using Model Maker. This experience enhanced my understanding of neural networks, deep learning, and mobile AI optimization, allowing me to build efficient, real-world AI solutions for mobile applications.</p>
+           <a href="#"> </a>
+        </div>
+
+        <!-- <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2> UI/UX Design</h2>
+            <p>fvjafeiovuvSDsdvsdVsvsDfnufvfovnfovfevuofnvofvuiofenvfeovnfjovnfvonfvjonfvfenvujoefvnfejvnfejvnfej</p>
+           <a href="#">Learn more </a>
+        </div> -->
+
+        <!-- <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>fvjafeiovdbbadfbufnufvfovnfovfevuofnvofvuiofenvfeovnfjovnfvonfvjonfvfenvujoefvnfejvnfejvnfej</p>
+           <a href="#">Learn more </a>
+        </div> -->
+        </div>
+    </div>
+ 
+</div>
+<!-- ---------------------------------------------- -->
+  
+<!-- ********************portfolio******************************* -->
+<!-- <div id="portfolio">
+   <div class="container">
+     <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+            <img src="images/work-1.jpg" >
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>jvsffnsjvnsfvjsnvsnvsvnsjvnsjvnsvnsfjvnaivndoksdivjdsovmfsvokfovjef</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-2.jpg" >
+            <div class="layer">
+                <h3>Music Appp</h3>
+                <p>jvsffnsjvnsfvjsnvsnvsvnsjvnsjvnsvnsfjvnaivndoksdivjdsovmfsvokfovjef</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-3.jpg" >
+            <div class="layer">
+                <h3>eCommernce</h3>
+                <p>jvsffnsjvnsfvjsnvsnvsvnsjvnsjvnsvnsfjvnaivndoksdivjdsovmfsvokfovjef</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+   </div>
+</div> -->
+
+<!-- ************************************************** -->
+ <!-- *******************contact**************************** -->
+  <div id="contact">
+    <div class="container">
+         <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <a style="color: #fff;" href="mailto:sahilwarade12@gmail.com" target="_blank"><p  > <i class="fa-solid fa-square-envelope"></i>sahilwarade12@gmail.com</p></a>
+                <!-- <p>sahilwarade12@gmail.com</p> -->
+                    <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
+                    <!-- <a href=""><i class="fa-brands fa-instagram"></i></a> -->
+                    <a style="color: #fff;" href="https://www.linkedin.com/in/sahil-warade-5262a5281/" target="_blank"><p ><i class="fa-brands fa-linkedin"></i>LinkedIn</p></a>
+                    <a style="color: #fff;" href="https://github.com/SahilWarade" target="_blank"><p ><i class="fa-brands fa-square-github"></i></i>Github</p></a>
+                    <!-- <a href=""><i class="fa-brands fa-x-twitter"></i></a> -->
+                 </div>
+                    <div class="cvbtn" onclick="downloadCV()">
+                        <i class="fa-solid fa-file-arrow-down fa-beat fa-xl" style="margin-bottom: 20px;"></i>
+                        <div>Download CV</div>
+                    </div>
+            </div>
+            <!-- <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required >
+                    <input type="email" name="" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div> -->
+         </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright Sahil Warade. <i class="fa-solid fa-heart"></i></p>
+    </div>
+  </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<!-- ************** -->
+ <script>
+    var sidemeu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        
+         sidemeu.style.right = "0";
+        ///sidemeu.style.setProperty("right", "0px");
+    }
+    function closemenu(){
+         sidemeu.style.right = "-200px";
+       // sidemeu.style.setProperty("right", "-200px");
+    }
+ </script>
+
+
+
+<!-- ******************************************************** -->
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbyoNXSO0-6e34wbaATtYlRQjHgLmztFdGTUwHSvD-izrJ-ZaEXoOGuZYYVJPo7a26hbTw/execL>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML= ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+    function downloadCV() {
+        window.location.href="images/Sahil Resume.pdf"
+    }
+</script>
+
+</body>
+</html>
